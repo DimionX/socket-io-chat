@@ -11,6 +11,7 @@ services:
       interval: 30s
       timeout: 5s
       retries: 3
+    restart: unless-stopped
     volumes:
       - ./src:/workspace
       - /workspace/public/assets  # ignore build assets

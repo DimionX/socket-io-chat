@@ -1,0 +1,67 @@
+@use 'variables' as v;
+
+.msg {
+  max-width: min(75%, 400px);
+  padding: 0.75rem 1rem;
+  border-radius: v.$radius;
+  box-shadow: var(--shadow);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  animation: slideIn 0.3s ease-out;
+}
+
+.msg--user {
+  background: var(--bg-msg-user);
+  margin-left: auto;
+  border-bottom-right-radius: v.$radius-sm;
+}
+
+.msg--other {
+  background: var(--bg-msg-other);
+  margin-right: auto;
+  border-bottom-left-radius: v.$radius-sm;
+}
+
+.msg time {
+  display: block;
+  font-size: 0.75rem;
+  color: v.$muted;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+.chat-image {
+  max-width: 100%;
+  border-radius: v.$radius;
+  cursor: zoom-in;
+  transition: transform v.$transition;
+}
+
+.chat-image:hover {
+  transform: scale(1.02);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: grid;
+  place-items: center;
+  cursor: zoom-out;
+  z-index: 1000;
+}
+
+.modal img {
+  max-width: min(90%, 1000px);
+  max-height: 90vh;
+  border-radius: v.$radius;
+}
+
+#typing {
+  font-size: 0.9rem;
+  color: v.$muted;
+  padding: 0 1rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}

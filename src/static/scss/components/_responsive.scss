@@ -1,0 +1,40 @@
+@media (max-width: 600px) {
+  .card {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .error-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .card h1 {
+    font-size: 2.2em;
+  }
+
+  .card p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .home-link {
+    padding: 10px 25px;
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .msg {
+    max-width: 85%;
+  }
+
+  form {
+    padding: 0.75rem;
+  }
+
+  input[type="text"] {
+    padding: 0.65rem 1rem;
+  }
+}

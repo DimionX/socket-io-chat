@@ -1,0 +1,11 @@
+-r requirements.txt
+# dev
+black==25.1.0
+flake8==7.3.0
+pre-commit==4.2.0
+isort==6.0.1
+bandit==1.8.6
+pip-audit==2.9.0
+pyright==1.1.403
+pytest==8.4.1
+pytest-mock==3.14.1

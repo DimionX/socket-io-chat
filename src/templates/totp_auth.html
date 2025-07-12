@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TOTP Auth</title>
+  <meta name="color-scheme" content="light dark"/>
+  <link rel="stylesheet" href="/assets/style.css?v={{ build }}"/>
+</head>
+<body>
+<main class="flex items-center justify-center">
+    <section class="card">
+        <h1>Enter Code</h1>
+        <p>Open Google Authenticator and enter the 6-digit code.</p>
+        <form method="post" action="{{ url_for('auth') }}" id="totp-form">
+            <input type="text" id="totp-input" name="code" inputmode="numeric" autocomplete="one-time-code" placeholder="123456" required maxlength="6" pattern="\d{6}" style="text-align: center; font-size: 1.5rem; letter-spacing: 0.3ch;">
+        </form>
+    </section>
+</main>
+
+<script>
+const input = document.getElementById('totp-input');
+const form = document.getElementById('totp-form');
+
+input.addEventListener('input', () => {
+    if (input.value.length === 6 && /^\d{6}$/.test(input.value)) {
+        form.submit();
+    }
+});
+</script>
+</body>
+</html>

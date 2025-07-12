@@ -1,0 +1,27 @@
+svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.attachment-icon:hover {
+  transform: rotate(45deg);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

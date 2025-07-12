@@ -1,0 +1,45 @@
+@use 'variables' as v;
+
+.card {
+  background: v.$card-bg-light;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.card h1 {
+  margin: 0 0 15px;
+  font-size: 2.8em;
+  color: v.$text-color-light;
+  letter-spacing: -1px;
+}
+
+.card p {
+  font-size: 1.1em;
+  color: v.$text-muted-light;
+  line-height: 1.6;
+  margin: 0 0 30px;
+  padding: 0 15px;
+  hyphens: auto;
+}
+
+.error-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, v.$icon-bg-light 0%, #ffe2e2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-icon svg {
+  width: 60%;
+  height: 60%;
+  stroke: v.$icon-stroke-light;
+}

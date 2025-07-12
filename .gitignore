@@ -1,0 +1,22 @@
+# IDEs and editors
+.idea/
+.DS_Store
+
+# Environments
+venv/
+.venv/
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+src/logs/**
+!src/logs/.gitkeep
+
+# Compiled or generated assets
+src/public/assets/**

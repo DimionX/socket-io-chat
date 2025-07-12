@@ -1,0 +1,12 @@
+@use 'variables' as v;
+
+.home-link {
+  display: inline-block;
+  padding: 12px 30px;
+  background: v.$button-bg;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 68, 68, 0.3);
+}

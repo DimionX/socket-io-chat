@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "node src/static/build.mjs"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

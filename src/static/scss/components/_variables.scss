@@ -1,0 +1,47 @@
+// Light theme defaults
+:root {
+  --bg-gradient-light: #f5f7fa;
+
+  --primary: #5e81fb;
+  --primary-hover: #1d4ed8;
+  --bg-chat: linear-gradient(135deg, var(--bg-gradient-light) 0%, var(--bg-gradient-light) 100%);
+  --bg-msg-user: #d1fae5;
+  --bg-msg-other: #f9fafb;
+  --input-bg: #ffffff;
+  --text: #1f2937;
+  --muted: #9ca3af;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: 0.3s ease;
+}
+
+// Background gradients
+$bg-gradient-light: #f5f7fa;
+
+// Colors & Theme
+$primary: #2563eb;
+$primary-hover: #1d4ed8;
+$bg-chat: linear-gradient(135deg, $bg-gradient-light 0%, $bg-gradient-light 100%);
+$bg-msg-user: #d1fae5;
+$bg-msg-other: #f9fafb;
+$input-bg: #ffffff;
+
+// Typography
+$font-base: system-ui, -apple-system, 'Segoe UI', sans-serif;
+$text: #1f2937;
+$muted: #9ca3af;
+
+// Effects
+$radius: 12px;
+$radius-sm: 6px;
+$shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+$transition: 0.3s ease;
+
+// Additional variables
+$card-bg-light: white;
+$text-color-light: #0b243e;
+$text-muted-light: #4a5568;
+$icon-bg-light: #ffd6d6;
+$icon-stroke-light: #ff4444;
+$button-bg: linear-gradient(135deg, #f87171 0%, #db2777 100%);
